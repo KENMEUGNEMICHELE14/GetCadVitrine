@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>CONSTRUCTION</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- POur ajouter la bibliotheque du telephone-->
+</head>
+
+
+<!-- Intégration du SDK EmailJS et ayant en paramètre la clé publique -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    (function() {
+      emailjs.init("U4JW4K5mpqpjbcV3s");
+    })();
+</script>
+
+
+<body>
+<!--Pour l'Entete-->
+<header>
+<!--  Pour le logo-->
+    <div class="logo">
+        <img src="getCadImage.png"alt="logo",width="5",height="5">
+    </div>
+    <!-- Pour les liens de naivations de la page-->
+    <nav>
+        <ul class="nav-Links">
+            <li> <a href="#accueil"> Accueil</a></li>
+            <li> <a href="#apropos"> A propos</a></li>
+            <li> <a href="#service"> Services</a></li>
+            <li> <a href="#realisation"> Realisations</a></li>
+            <li> <a href="#contact"> Contact</a></li>
+        </ul>
+        <div class="burger"><!-- pour les liens de navigations sur un telephone (responsivité)-->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+<!--Pour l'Accueil-->
+<section id="accueil" class="hero">
+    <div class="container">
+        <div class="text-container">
+            <h1> Construire vite et bien!</h1>
+            <h2 class="dac">D'ACCORD </h2>
+            <h1>Au juste prix c'est encore mieux.</h1>
+            <p> Depuis plus de 15 ans ils nous ont fait confiance, alors POURQUOI PAS VOUS?</p>
+            <a href="tel:+237699869089" class="btnContact">
+                <i class="fas fa-phone"></i> Appelez nous
+            </a>
+        </div>
+        <div class="image-container"> </div>
+    </div>
+</section>
+
+<!--POur A propos-->
+<section id="apropos" class="apropos">
+    <div class="apropos-container">
+        <div  class="apropos-content">
+            <div class="apropos-text">
+                <h2> Plus de 15 ans d'Expertise,Pourquoi hésiter encore?</h2>
+                <p> Né en 2006, GetCad BTP est une entreprise qui a su s'élancer par ses multiples et divers résultats.
+                    Notre équipe qualifiée et dotée des plusieurs talents met son savoir-faire au services de votre
+                    projet quelque soit l'inquiétude dans l'établisssement de votre batîment.
+                </p>
+                <p>
+                    Nous priviligeons la qualité, le respect des délais et la satisfaction des clients car un client
+                    satisfait c'est plusieurs familles satisfaites et GetCad BPT satisfait également. Chaque projet
+                    est unique et mérite son attention particulière.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number"> 15 </div>
+                        <div class="stat-label"> Années d'expériences</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number"> 13+</div>
+                        <div class="stat-label"> Projets réalisés </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number"> 95%</div>
+                        <div class="stat-label"> Clients satisfaits </div>
+                    </div>
+                </div>
+            </div>
+            <div class="apropos-image">
+                <p> Photo de l'équipe <br> Sur un chantier</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--pour Services-->
+<section id="service" class="service">
+    <div class="service-container">
+        <div class="section-title">
+            <h2> NOS SERVICES </h2>
+            <p> Nous avons une gamme de services</p>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3> Contruction depuis la fondation</h3>
+                <p> Maisons individuelles, villas, duplex,Hôtels</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-ruler-combined"></i>
+                </div>
+                <h3> Etudes Techniques</h3>
+                <p> Pour planifier, anticiper les risques et optimiser la mise en oeuvre du chantier</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h3> Maçonnerie</h3>
+                <p> Murs,dalles,fondation,crépissage...</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <h3> Finitions</h3>
+                <p> Peinture,carrelage, plomberie,menuiserie, électricité,FInitions haut de gamme...</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Pour Realisations-->
+<section id="realisation" class="realisation">
+    <div class="realisation-container">
+        <div class="realisation-title">
+            <h2> NOS REALISATIONS</h2>
+        </div>
+        <div class="pdf-container">
+            <iframe class="pdf-meme"
+            src="AccueilImage/References%20Getcad%20BTP.pdf">
+            </iframe>
+        </div>
+    </div>
+
+</section>
+<!--Pour contact-->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="title"></div> <!--Pour le titre dans el conteneur-->
+            <h2 class="mot"> CONTACTEZ NOUS</h2>
+            <p class="par"> Vous serez satisfaits</p>
+        </div>
+        <!--Pour le formulaire-->
+    <div class="contact-contain">
+        <div class="cont-form">
+            <form id="contactForm">
+                <!--pour le Nom Complet-->
+                <div class="form-group">
+                    <label for="name"> Nom complet  * </label><!--le for relie implicitement le label et le input-->
+                    <input type="text" id="name" name="name" required >
+                </div>
+                <!--pour l'email-->
+                <div class="form-group">
+                    <label for="email"> Email * </label> <!--le email dans le for ici est l'identifiant pour lier le label et le input-->
+                    <input type="email" id="email" name="email" required> <!-- required: le champ est obligatoire-->
+                </div>
+                <!--pour le telephone-->
+                <div class="form-group">
+                    <label for="telephone"> Telephone </label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <!--pour les détails de ce qu'on veut-->
+                <div class="form-group">
+                    <label for="message"> Description </label>
+                    <textarea id="message" name="message" placeholder="Decrivez votre projet..." required></textarea>
+                </div>
+                <button type="submit" class="btnC">
+                    <span class="btn-text">Soumettre</span>
+                    <span class="loading-spinner"  >
+                        <i class="fas fa-circle-notch fa-spin"> </i>
+                    </span>
+                </button>
+            </form>
+        </div>
+        <div class="cont-info"> <!--Pour les informations sur les numéros-->
+            <h3> Informations du Contact</h3>
+            <!--Pour l'adresse'-->
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <strong> Adresse</strong><br> Montée Aurore(Face SOMATEL Ecole de Police)<br>
+                    Yaoundé,Cameroun
+                </div>
+            </div>
+            <!--Pour le téléphone-->
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                     <strong> Telephone</strong> <br> Tel:678993652 <br>WhatsApp:699869089
+                </div>
+            </div>
+            <!--Pour l'email-->
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <strong> Email</strong> <br> getcadbe@gmail.com
+                </div>
+            </div>
+            <!--Pour l'horaire-->
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <strong> Horaire</strong> <br> Lundi-Samedi:09h-17H
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 GetCad BTP. </p>
+        <div class="legal-item">
+        <a href="#ML">Mentions légales</a>
+        <a href="#PC">Politiques de confidentialités</a>
+        <a href="#CU">Conditions d'utilisation</a>
+        <a href="#PS">Plan du site</a>
+    </div>
+    </div>
+</footer>
+<script src="./script.js"></script>
+
+</body>
+</html>
