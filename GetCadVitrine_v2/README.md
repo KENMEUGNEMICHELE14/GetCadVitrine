@@ -1,7 +1,7 @@
 # GetCad BTP – site vitrine
+Ce Site web est la vitrine officiel de l'entreprise **GetCad BTP**.
 
-Site statique (HTML, CSS, JavaScript), sans étape de build. Prêt pour Vercel.
-
+Il les activités de l'entreprise, ses réalisations en images, ses références professionnelles ainsi qu'un formulaire de contact pour les clients et partenaires.
 ## Structure
 
 ```
@@ -14,24 +14,10 @@ assets/references-getcad-btp.pdf   dossier de références (téléchargeable)
 vercel.json                   cache et en-têtes de sécurité
 ```
 
-## Tester en local
 
-```bash
-python3 -m http.server 8000
-# puis ouvrir http://localhost:8000
-```
 
-## Mettre en ligne sur Vercel
-
-1. Pousser ce dossier sur GitHub (le dépôt existant `GetCadVitrine` convient).
-2. Sur vercel.com : **Add New → Project**, choisir le dépôt.
-3. **Framework Preset : Other**. Laisser tous les autres champs vides, puis **Deploy**.
-4. Chaque `git push` sur `main` redéploie automatiquement le site.
-
-Pour un nom de domaine : Vercel → Project → Settings → Domains.
-
-## Modifier le contenu
-
-- Textes, téléphones, email, horaires : `index.html`
-- Formulaire de contact (EmailJS) : constantes en haut de la section « Formulaire » de `assets/script.js`
-- Changer la photo d'accueil : remplacer `assets/img/hero-1024.webp` (1024×1024) et `hero-640.webp` (640×640)
+## Technologies utilisées
+- HTML5 / CSS3
+- JavaScript
+- Hébergement via Vercel
+     ccueil : remplacer `assets/img/hero-1024.webp` (1024×1024) et `hero-640.webp` (640×640)
